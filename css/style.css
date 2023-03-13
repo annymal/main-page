@@ -1,0 +1,494 @@
+@import "bootstrap.min.css";
+@import "all.min.css";
+/********************ШАПКА******************************/
+header.inverted {
+    box-shadow: 0 3px 5px 0.3px rgba(0,0,0,0.1);
+    background: #1a0505;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+body{
+    height: 100%;
+    background: radial-gradient(50% 50% at 50% 50%, #460B0B 0%, #0B0A0A 100%);
+    color: white;
+    padding: 0;
+    margin: 0;
+    font-family:"Segoe UI";
+}
+.wrapper{
+    min-height: 100%;
+    overflow: hidden;
+}
+*{
+    box-sizing: border-box;
+}
+section{
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+}
+.main-header{
+    position: fixed;
+    width: 100%;
+    left: 0;
+    top: 0;
+    z-index: 50;
+}
+.menu-top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    Z-index:2;
+    position: sticky;
+    top: 0;
+    padding: 1rem;
+}
+.main-block__menu {
+    display: flex;
+    text-align: right;
+    flex-direction: column;
+    align-items: end;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+a:hover{
+    color:white;
+}
+.menu-top__item{
+    margin-right: 30px;
+    color: #e2dede;
+}
+.menu-top__item:hover{
+    transition: 0.1s ease-in-out;
+    color: white;
+}
+.menu-top__button{
+    display: flex;
+    align-items: flex-end;
+}
+.menu-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    gap: 10px;
+    position: relative;
+    width: 177px;
+    height: 57px;
+    background: #bd1717;
+    border: none;
+    border-radius:3px ;
+    box-shadow: 1px 3px 3px rgba(0, 0, 0, 0.3);
+}
+.menu-button:hover{
+    background: #f51717;
+    box-shadow: 1px 6px 6px rgba(0, 0, 0, 0.3);
+}
+
+.nav{
+    display: flex;
+    list-style: none;
+}
+.nav-item{
+    margin-bottom: 10px;
+}
+/*********************************************************/
+.page{
+    position: relative;
+    background: linear-gradient(rgb(95 91 91/70%), rgba(0, 0, 0, 1)),
+     url(../img/dayzz.jpg) center/cover;
+    padding: 300px;
+}
+
+
+/*********************************/
+
+.main-block__body{
+    position: relative;
+    z-index: 2;
+    padding: 184px 200px 191px 50px ;
+    /*max-width: 400px;*/
+}
+.main-block__text {
+    font-size: 16px;
+    line-height: 150%;
+    max-width: 400px;
+    color: white;
+}
+.main-block__title {
+    font-size: 58px;
+    line-height:138%;
+    /*letter-spacing: 0.2em;*/
+    color: white;
+    font-weight: 800;
+}
+.main-block__body> *{
+    margin: 0 20px 35px 0;
+}
+/*******************************************/
+
+.player__description{
+    position: absolute;
+    top: 50px;
+    left: 55px;
+    font-weight: 400;
+    text-align: center;
+}
+.player__image-ellipse{
+    position: relative;
+    padding: 1.5rem;
+    margin-bottom: 20px;
+}
+.title{
+    padding: 1rem;
+    font-size: 20px;
+    font-weight: 700;
+}
+.player__description__number{
+    font-weight: 700;
+}
+.player__description__turn{
+    font-size: 14px;
+}
+.container{
+    /*max-width: 1287px;*/
+    margin: 0 auto;
+    padding: 0 15px;
+    box-sizing: content-box;
+}
+.col-md-4{
+
+}
+.card{
+    background: linear-gradient(180deg, #240707 0%, #561010 100%);
+    display: flex;
+    flex-direction: column;
+    padding: 20px 15px 20px 15px;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 1px 4px 4px rgba(0, 0, 0, 0.3);
+    height: 100%;
+}
+.row{
+}
+.col{
+    flex: 0 0 auto;
+    width: 25%;
+}
+.section__heading{
+    padding-bottom: 1rem;
+}
+/********************************************/
+
+.how_play__title{
+    margin-bottom: 1rem;
+    font-size: 18px;
+    font-weight: 600;
+}
+.how_play__block{
+    background: #210808;
+    padding: 2rem;
+    border-radius: 10px;
+}
+.how_play__description{
+    padding:0 0 2rem 0;
+    font-size: 16px;
+}
+.how_play__card{
+    align-items: flex-start;
+}
+.how__play__content{
+    flex: 1 1 auto;
+}
+.heading__description{
+    padding-bottom: 2rem;
+}
+.socials__item{
+
+}
+.play__block{
+    display: flex;
+}
+.recommendation__card{
+    margin-left: 30px;
+    margin-bottom: 20px;
+    align-items: flex-start;
+    min-width: 350px;
+}
+.recommendation__title{
+    font-size: 18px;
+    font-weight: 600;
+}
+.recommendation__row{
+    display: flex;
+    flex-direction: column;
+}
+/******************************************/
+.news__card{
+    background: radial-gradient(98.82% 107.93% at 98.82% 98.36%, #871515 0%, #130E0E 100%);
+}
+
+.news__card__img{
+    width: 150px;
+}
+.arrow {
+    position: relative;
+    width: 50px;
+    height: 50px;
+    border: 3px solid white;
+    border-radius: 50%;
+}
+.arrow:after {
+    position: absolute;
+    top: 15px;
+    left: 12px;
+    content: '';
+    display: block;
+    width: 15px;
+    height: 15px;
+    border-left: 3px solid white;
+    border-bottom: 3px solid white;
+    transform: rotate(222deg);
+}
+.arrow:hover{
+    background:#f51717;
+}
+/********************************************************/
+.footer__block{
+    background: rgba(16, 15, 15, 0.6);
+}
+.socials__item{
+    margin-right: 25px;
+    width: 2em;
+    height: 2em;
+    line-height: 3rem;
+    text-align: center;
+    background: #561010;
+    font-size: 1.5rem;
+    text-decoration: none;
+    border-radius: 50%;
+    color: #fff;
+    text-shadow: 0 1px 2px rgb(0 0 0 / 10%);
+}
+.socials__item:hover{
+   background: #f51717;
+}
+.arrow__block{
+    display: flex;
+    justify-content: center;
+}
+
+/*****************************************/
+
+@media (max-width: 2500px){
+    .page{
+        padding: 200px;
+    }
+    .main-block__body{
+        padding: 184px 70px 191px 50px;
+    }
+}
+@media (max-width: 1800px){
+    .main-block__body{
+        padding: 184px 50px 191px 50px;
+    }
+}
+
+@media (max-width: 1199px) {
+    .how_play__card {
+        max-width: 500px;
+    }
+    .news__card{
+        max-width: 100%;
+    }
+    .main-block__body{
+    padding: 184px 50px 191px 50px;}
+
+    .page{
+        padding: 0;
+    }
+}
+
+@media (max-width: 769px) {
+    .main-block__body{
+        padding: 184px 0 191px 50px;
+    }
+    .play__block{
+        flex-direction: column;
+    }
+    .recommendation__card{
+        max-width: 500px;
+        margin-left: 0;
+        margin-top: 30px;
+        margin-bottom: 0;
+    }
+    .how_play__card {
+        max-width: 500px;
+    }
+    .news__card{
+        max-width: 100%;
+    }
+
+}
+
+@media (max-width: 580px) {
+    .menu-top__item {
+        margin-right: 15px;
+    }
+
+    .main-block__menu {
+        text-align: center;
+        align-items: center;
+    }
+
+    .main-block__text {
+        max-width: 250px;
+    }
+
+    .main-block__title {
+        font-size: 40px;
+    }
+    .page {
+        background: linear-gradient(rgb(95 91 91/70%), rgba(0, 0, 0, 1)), url('../img/dayzz.jpg') 37%/cover;
+    }
+    .news__card__img {
+        width: 100px;
+    }
+    .arrow {
+        display: none;
+    }
+    .card {
+        margin-right: 30px;
+    }
+    .nav{
+        display: none;
+    }
+
+}
+/*верстка бургер меню*/
+
+.navbar__wrap {
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.hamb {
+    display: none;
+}
+.menu > li > a {
+    text-decoration: none;
+}
+.navbar__wrap .menu {
+    display: flex;
+}
+
+.navbar__wrap .menu > li {
+    display: flex;
+    align-items: stretch;
+}
+
+.navbar__wrap .menu > li > a {
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    color: rgba(255, 255, 255, 0.7);
+}
+/*********************************/
+@media (max-width: 580px) {
+
+.navbar__wrap .menu {
+    display: none;
+}
+
+.hamb {
+    display: flex;
+    align-items: center;
+}
+
+.hamb__field {
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.bar {
+    display: block;
+    width: 30px;
+    height: 3px;
+    margin: 6px auto;
+    background-color: #fff;
+    transition: 0.2s;
+}
+
+.popup {
+    position: fixed;
+    top: 75px;
+    left: -100%;
+    width: 100%;
+    background-color: #000;
+    z-index: 100;
+    display: flex;
+    transition: 0.3s;
+}
+
+.popup.open {
+    left: 0;
+}
+
+.popup .menu {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    padding: 50px 0;
+    overflow: auto;
+}
+
+.popup .menu > li {
+    width: 100%;
+}
+
+.popup .menu > li > a {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 20px 0;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+}
+
+/*.popup .menu > li > a:hover {!*в мобильной версии нет хавер*!*/
+/*    background-color: rgb(86, 81, 81);*/
+/*}*/
+
+.hamb__field.active .bar:nth-child(2) {
+    opacity: 0;
+}
+
+.hamb__field.active .bar:nth-child(1) {
+    transform: translateY(9px) rotate(45deg);
+}
+
+.hamb__field.active .bar:nth-child(3) {
+    transform: translateY(-9px) rotate(-45deg);
+}
+
+body.noscroll {
+    overflow: hidden;
+}
+.menu{
+    display: block;
+}
+}
+@media (min-width: 580px){
+    .navbar__wrap{
+        display: none;
+    }
+}
+
